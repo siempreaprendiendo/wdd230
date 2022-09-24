@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+
+    }
+
+    section:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: auto;        
+    }
+}

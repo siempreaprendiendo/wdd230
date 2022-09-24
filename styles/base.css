@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: antiquewhite;
+}
+
 body {
     font-size: 16px;
 }
