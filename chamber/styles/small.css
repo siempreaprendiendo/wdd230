@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  /*--primary-color: #B20D30;
+  --secondary-color: #3F84E5;
+  --accent1-color: #f5da89; */
+
+  /* font-family: 'Alkalami', serif;
+  font-family:'Indie Flower', cursive; */
+
+html {
+  background-color: black;
+}
+
+ol {
+  text-align: left;
+  padding: 1.5em;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #f5da89;
+  text-align: center;
+  padding: 1em;
+}
+main {
+  margin: 1.5em auto;
+}
+
+h1 {
+    font-size: 30pt;
+    font-family: 'Alkalami', serif;
+}
+
+h2 {
+    font-family:'Indie Flower', cursive;;
+    padding: 0.5em;
+}
+
+h4 {
+  font-family:'Alkalami', serif;
+  font-size: 18pt;
+}
+h5, h6 {
+    font-family: 'Indie Flower', cursive;;
+    font-size: 16pt;
+}
+
+header, footer {
+    padding: 1.5rem;
+    background-color: #B20D30;
+    text-align: center;
+    color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+}
+
+footer a {
+  color: white;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.social img {
+  max-width: 30px;
+  max-height: 30px;
+  border: 1px solid white;
+}
+
+#siteName, #newRelease, #event, #weather {
+  padding: 0;
+  position: relative;
+}
+
+#siteName h3{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-family: 'Alkalami', serif;
+  font-size: 5vw;
+  color: white;
+}
+
+#siteName img {
+  display: block;
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0;
+  border-radius: 10px;
+}
+
+#siteName div {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 2.5vw;
+  color: white;
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 15pt;
+  background: rgba(153, 10, 255, 0.2);
+}
+
+
+#newRelease h3 {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  font-size: 36px;
+  font-family: 'Alkalami', serif;
+}
+
+#newRelease p {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  object-fit: contain;
+  padding: 2em;
+}
+
+#newRelease img {
+  display: block;
+  width:100%;
+  border-radius: 10px;
+  opacity: 0.2;
+}
+
+#event, #siteName {
+  background-color: black;
+}
+
+#event h3 {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  font-size: 7.5vw;
+  font-family: 'Alkalami', serif;
+  color: white;
+}
+
+#event p {
+  position: absolute;
+  top: 68%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  object-fit: contain;
+  padding: 2em;
+}
+
+#event img {
+  display: block;
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+#weather {
+  background-color: rgb(212, 238, 248);
+}
+#weather div {
+  padding: 1.5em;
+}
+#weather h3 {
+  
+  padding: 1em;
+  font-size: 30px;
+  font-family: 'Alkalami', serif;
+  color: black;
+}
+
+#weather p {
+  padding: 0.5em 0 0  0 ;
+
+  font-weight: bold;
+}
+
+
+hr {
+  margin: 0.5em;
+}
+
+.input label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: .25em;
+  
+}
+
+#spotlights img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+#spotlights section:nth-child(3) {
+  display: none;
+}
+
+
+#banner {
+  display: none;
+  margin: 0 auto;
+  border: 1px solid #B20D30;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+#join {
+  display: none;
+  background-color: black;
+}
+
+#join p {
+  padding: 2em;
+}
+
+.date {
+  padding: 1em;
+  margin-bottom: 1.5em;
+  background-color:#3F84E5; 
+  color: white;
+  font-size: 18pt;
+  font-family: 'Alkalami', serif;
+}
+section {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 5px 5px 5px #999;
+}
+
+#businessInfo img {
+  border-radius: 100%;
+}
+
+nav button {
+  margin: .2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul{
+  padding: 0;
+  margin: 1em;
+  list-style: none;
+  background-color:#3F84E5; 
+  font-family: 'Alkalami', serif;
+}
+
+a:link { text-decoration: none; }
+nav a:hover {
+  color: #2f2259;
+  background-image: radial-gradient(white, #f5da89, #3F84E5, #3F84E5);
+  border-radius: 10pt;
+}
+
+nav ul li a {
+  display: block;
+  color: white; 
+  font-size: 26px;  
+}
+
+
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+

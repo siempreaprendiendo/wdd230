@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
   /*--primary-color: #B20D30;
   --secondary-color: #3F84E5;
-  --accent1-color: #F9CB40; */
-}
+  --accent1-color: #f5da89; */
 
 html {
   background-color: black;
@@ -34,7 +35,7 @@ nav a:hover {
   color: black;
   padding: 20px;
   font-weight: bold;
-  background-image: radial-gradient(white, #F9CB40, #3F84E5, #3F84E5);
+  background-image: radial-gradient(white, #f5da89, #3F84E5, #3F84E5);
   border-radius: 10pt;
 }
 
