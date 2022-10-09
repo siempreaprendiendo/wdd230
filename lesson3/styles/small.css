@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  /*--primary-color: #2f2259;
-  --secondary-color: #990aff;
-  --accent1-color: #d1c9f8; */
+  /*--primary-color: #B20D30;
+  --secondary-color: #3F84E5;
+  --accent1-color: #F9CB40; */
 }
 
 html {
@@ -20,7 +20,7 @@ nav ul{
   list-style: none;
   padding: 1.5em;
   margin-bottom: 2em;
-  background-color:#990aff; 
+  background-color:#3F84E5; 
   color: white;
   font-family: 'Parisienne', cursive;
 }
@@ -31,10 +31,10 @@ nav a {
 }
 a:link { text-decoration: none; }
 nav a:hover {
-  color: #2f2259;
+  color: black;
   padding: 20px;
   font-weight: bold;
-  background-image: radial-gradient(white, #d1c9f8, #990aff, #990aff);
+  background-image: radial-gradient(white, #F9CB40, #3F84E5, #3F84E5);
   border-radius: 10pt;
 }
 
@@ -46,50 +46,62 @@ ol {
 body {
   max-width: 700px;
   margin: 0 auto;
-  background-color: #d1c9f8;
+  background-color: #f5da89;
   padding: 1em;
   text-align: center;
 }
 
 img {
-  max-width: 100%;
-  border-radius: 100%;
+  max-width: 10rem;
+  min-width: 5rem;
+  border-radius: 10%;
 }
 
 h1 {
     font-size: 30pt;
-    font-family:'Parisienne', cursive;
+    font-family: 'Alkalami', serif;
+    letter-spacing: 1.5px;
 
 }
 h2 {
-    font-family:'Ubuntu', sans-serif;
+    font-family:'Indie Flower', cursive;
 }
 
 h3 {
-    font-family:'Parisienne', cursive;
+    font-family:'Alkalami', serif;
     font-size: 24pt;
     padding: 0.25em;
 }
 
 h4 {
-  font-family:'Parisienne', cursive;
+  font-family:'Indie Flower', cursive;
   font-size: 18pt;
 }
 h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-size: 16pt;
 }
 
 header, footer {
     border: 1px solid black;
     padding: 1.5rem;
-    background-color: indigo;
+    background-color: #B20D30;
     text-align: center;
     color: white;
 }
 
+header {
+  line-height: 3em;
+}
+
+.copyright, #dateMod {
+  font-family:'Alkalami', serif;
+  font-size: 14pt;
+  padding: 0;
+}
+
 p {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Indie Flower', cursive;
   padding: 1em;
 }
 
@@ -128,14 +140,14 @@ table {
 }
 
 .primary {
-  background-color: #d1c9f8;
+  background-color: #F9CB40;
 }
 .secondary {
-  background-color: indigo;
+  background-color: #B20D30;
   color: white;
 }
 .accent1 {
-  background-color: #990aff;
+  background-color: #3F84E5;
   color: white;
 }
 
