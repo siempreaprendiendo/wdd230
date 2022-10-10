@@ -69,6 +69,12 @@ header img {
   border-radius: 10%;
 }
 
+footer img {
+  max-width: 50px;
+  height: auto;
+  border-radius: 5%;
+}
+
 footer a {
   color: white;
 }
@@ -139,13 +145,6 @@ footer a {
   padding: 2em;
 }
 
-#newRelease img {
-  display: block;
-  width:100%;
-  border-radius: 10px;
-  opacity: 0.2;
-}
-
 #event, #siteName {
   background-color: black;
 }
@@ -159,33 +158,10 @@ footer a {
   color: white;
 }
 
-#event p {
-  position: absolute;
-  top: 68%;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  object-fit: contain;
-  padding: 2em;
-}
-
-#event img {
-  display: block;
-  width:100%;
-  height: auto;
-  object-fit: contain;
-  padding: 0;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-
 #weather {
   background-color: rgb(212, 238, 248);
 }
-#weather div {
-  padding: 1.5em;
-}
+
 #weather h3 {
   
   padding: 1em;
@@ -193,13 +169,6 @@ footer a {
   font-family: 'Alkalami', serif;
   color: black;
 }
-
-#weather p {
-  padding: 0.5em 0 0  0 ;
-
-  font-weight: bold;
-}
-
 
 hr {
   margin: 0.5em;
@@ -213,34 +182,13 @@ hr {
   
 }
 
-#spotlights img {
-  width: 100%;
-  height: auto;
-  border-radius: 100%;
-}
-
 #spotlights section:nth-child(3) {
   display: none;
-}
-
-
-#banner {
-  display: none;
-  margin: 0 auto;
-  border: 1px solid #B20D30;
-  padding: 1.5rem;
-  text-align: center;
-  font-weight: 700;
-  font-size: 15pt;
 }
 
 #join {
   display: none;
   background-color: black;
-}
-
-#join p {
-  padding: 2em;
 }
 
 .date {
@@ -258,11 +206,9 @@ section {
     padding: 1rem;
     margin: 0.5rem;
     box-shadow: 5px 5px 5px #999;
+    min-height: 15rem;
 }
 
-#businessInfo img {
-  border-radius: 100%;
-}
 
 nav button {
   margin: .2rem;
