@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Images</title> 
+    <meta name="description" content="Demonstration of lazy loading images.">
+    <link rel="stylesheet" href="css/lesson07.css">
+</head>
+<body>
+    <header>
+        <h1>Progressive Loading of Images</h1>
+    </header>
+    <main>
+        <img src="images/placeHolder.jpeg" data-src="images/christmasKitty.webp" alt="Christmas Kitty">
+        <img src="images/placeHolder.jpeg" data-src="images/sleepyKitties.webp" alt="Sleepy Kitties">
+        <img src="images/placeHolder.jpeg" data-src="images/yinyang.webp" alt="A Cat and His Boy">
+        <img src="images/placeHolder.jpeg" data-src="images/hiddenKittens.webp" alt="Hidden Kittens">
+        <img src="images/placeHolder.jpeg" data-src="images/roadtrip.webp" alt="Carseat Cat">
+        <img src="images/placeHolder.jpeg" data-src="images/elephant.webp" alt="Elephant">
+        
+    </main>
+    <footer>
+        <p class="copyright">&copy; <span id="year"></span> 🗻 Rebecca L. Jimenez 🗻 Washington</p>
+        <div id="dateMod"></div>
+    </footer>
+    <script src="scripts/lesson07.js" defer></script>
+    
+    
+</body>
+</html>
