@@ -16,7 +16,7 @@
 
   <body>
         <header>
-            <img src="images/acocLogo.webp" alt="Acme Logo">
+            <img src="images/acocLogo1.webp" alt="Acme Logo">
             <div class="heading">
                 <h1>Acme</h1>
                 <h2>Chamber of Commerce</h2>
@@ -25,45 +25,69 @@
                 <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
                 <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest logo"></a>
             </div>
-            <nav>
-               <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-                <ul id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            </nav>    
+            <div class="menuBtn">
+                <div class="menuBtn-burger"></div>
+            </div> 
+            <div class="date"></div>
         </header>
+        <nav>
+            <ul id="primaryNav">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="discover.html">Discover</a></li>
+                 <li><a href="directory.html">Directory</a></li>
+                 <li><a href="join.html">Join</a></li>
+                 <li><a href="contact.html">Contact</a></li>
 
-        <div class="date"></div>
-    
+             </ul>
+         </nav>   
+        
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <main id="homePage">
        <section id="siteName">
             <h3>Welcome to Acme Washington</h3>
+            <picture>
+                  <source srcset="images/wdd230-org400.webp" media="(min-width: 400px) and (max-width: 599)">
+                  <source srcset="images/wdd230-org600.webp" media="(min-width: 600px) and (max-width: 799)">
+                  <source srcset="images/wdd230-org800.webp" media="(min-width: 800px)"> 
+                <img src="images/wdd230-org200.webp" alt="wdd230 small">               
+            </picture>
+            <!-- <img src="images/acmeHero.jpg" alt="City of Acme"> -->
         </section>
        <section id="event">
-           <h3>Events</h3>
+            <img src="" alt="">
+            <h3>Events</h3>
        </section>
        <section id="weather">
-            <h3>Weather</h3>            
+            <h3>Weather</h3>
+            <div>
+                <p><strong><span id="current-temp"></span>33&deg;C</strong></p>
+                <figure>
+                    <img src="images/weather.webp" alt="Cloudy Sun" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
+                <div>
+                    <p>Windspeed: <span id="windspeed">2.5 km/h</span></p>
+                    <p>Wind Chill: <span id="windchill">N/A</span></p>
+                </div>
+            </div>            
        </section>
        <section id="newRelease">
-           <h3>New Release</h3>
+            <img src="" alt="">
+            <h3>New Release</h3>
        </section>
        <section id="spotlights">
+            <img src="" alt="">
             <h3>Spotlights</h3>
             <div class="members "></div>        
        </section>
        <section id="join">
-           <h3>Join Us!</h3>
+            <img src="" alt="">
+             <h3>Join Us!</h3>
         </section>
     </main>
     <footer>
         <div>
-            <img src="images/acocLogo.webp" alt="Acme Logo">
+            <img src="images/acocLogo1.webp" alt="Acme Logo">
             <h3>Acme Chamber of Commerce</h3>
             <div id="address">
                 <p>1234 Walla Walla Way</p>
@@ -79,6 +103,7 @@
         <div id="dateMod"></div>
     </footer>
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
   </body>
 
 </html>
