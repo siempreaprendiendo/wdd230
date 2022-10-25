@@ -50,7 +50,9 @@ h5, h6 {
     font-family: 'Indie Flower', cursive;;
     font-size: 16pt;
 }
-
+hr {
+  margin: 0.5em;
+}
 /* ----- Header / Footer ----- */
 
 header, footer {
@@ -279,29 +281,6 @@ nav ul.open {
   color: white;
 }
 
-#weather {
-  background-color: rgb(212, 238, 248);
-}
-
-#weather h3 {
-  
-  padding: 1em;
-  font-size: 30px;
-  font-family: 'Alkalami', serif;
-  color: black;
-}
-
-hr {
-  margin: 0.5em;
-}
-
-.input label {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: .25em;
-}
-
 #spotlights section:nth-child(3) {
   display: none;
 }
@@ -324,9 +303,12 @@ section {
 /* ----- Weather ----- */
 #weather {
   background-color: rgb(212, 238, 248);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 238, 248);
 }
 #weather div {
-  padding: 1.5em;
+  padding: .5em;
   font-family: 'Indie Flower', cursive;
   font-size: 18pt;
 }
@@ -348,4 +330,32 @@ section {
   padding: .5em;
 }
 
+.input {
+  padding: 0.25em;
+}
 
+#speed, #tempF {
+  padding: 0.5em;
+  text-align: center;
+}
+
+#weather h3 {
+  
+  padding: 1em;
+  font-size: 30px;
+  font-family: 'Alkalami', serif;
+  color: black;
+}
+
+.input label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: .25em;
+}
+
+#display1 {
+  background-color: white;
+}
+
+/* ----- End of Weather ----- */

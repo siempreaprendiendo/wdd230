@@ -4,6 +4,7 @@
           max-height: 150px;
     }
   
+    /* ----- Grid Layout ----- */
         main {
           display: grid;
           gap: 0em;
