@@ -57,7 +57,7 @@ hr {
 
 header, footer {
     padding: 1em;
-    background-color: #B20D30;
+    background-color: #b20d30;
     text-align: center;
     color: white;
 }
@@ -359,3 +359,31 @@ section {
 }
 
 /* ----- End of Weather ----- */
+
+/* ----- discover page css ----- */
+
+#images {
+  display: grid;
+  text-align: center;
+  width: 100%;
+}
+
+#images section {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  margin: 2em;
+  background-color: #3F84E5;
+  color: white;
+  justify-content: center;
+}
+
+#images figure {
+  border: 1em solid white;
+  box-shadow: 5px 5px 5px #999;
+  background: white;
+}
+
+#images h3 {
+  padding: 1em;
+}
