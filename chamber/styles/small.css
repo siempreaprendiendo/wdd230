@@ -363,9 +363,7 @@ section {
 /* ----- discover page css ----- */
 
 #images {
-  display: grid;
-  text-align: center;
-  width: 100%;
+  align-items: center;
 }
 
 #images section {
@@ -382,6 +380,7 @@ section {
   border: 1em solid white;
   box-shadow: 5px 5px 5px #999;
   background: black;
+  padding: 0.5em;
 }
 
 #images h3 {
