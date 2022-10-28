@@ -381,7 +381,7 @@ section {
 #images figure {
   border: 1em solid white;
   box-shadow: 5px 5px 5px #999;
-  background: white;
+  background: black;
 }
 
 #images h3 {
