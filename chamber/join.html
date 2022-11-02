@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Chamber of Commerce: Join Page</title> 
+    <meta name="description" content="Here business owners can join our chamber of commerce and become an active meber of the community.">
+    <link rel="sylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <img src="images/acocLogo1.webp" alt="Acme Logo">
+        <div class="heading">
+            <h1>Acme</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest logo"></a>
+        </div>
+        <div class="menuBtn">
+            <div class="menuBtn-burger"></div>
+        </div> 
+        <div class="date"></div>
+    </header>
+    <nav>
+        <ul id="primaryNav">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="discover.html">Discover</a></li>
+             <li><a href="directory.html">Directory</a></li>
+             <li><a href="join.html">Join</a></li>
+             <li><a href="contact.html">Contact</a></li>
+
+         </ul>
+     </nav>   
+    <div class="date"></div>
+    <div class="time"></div>
+    <main class="joinForm">
+        <div class="membershipInfo">
+            <ul>
+                <li class="membership">
+                    <h3>Gold Membership: $1500/year</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+                <li class="membership">
+                    <h3>Silver Membership: $1000/year</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+                <li class="membership">
+                    <h3>bronzeMembership: $500/year</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+                <li class="membership">
+                    <h3>Non-Prophet Membership: Free</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nihil repellendus suscipit adipisci minima perferendis consectetur omnis, magni cupiditate debitis consequuntur eos. Cumque perferendis recusandae velit harum distinctio fuga voluptatem!</p>    
+                </li>
+            </ul>
+        </div>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business Name* <input type="text" name="title" required></label>
+                <label class="top">Business Possition Title <input type="text" name="title" ></label>
+                <label class="top"><p>Business Description</p><textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Choice</legend>
+                <label class="sbs"><input type="radio" name="membership" value="np">NP Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership $500</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership $1000</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership $1500</label>
+            </fieldset>
+            
+            <input type="submit" value="Join Now" name="joinButton" class="submitBtn">
+            <input type="hidden" value="" id="dateVisited">
+
+        </form>       
+    </main>
+    <footer>
+        <div>
+            <img src="images/acocLogo1.webp" alt="Acme Logo">
+            <h3>Acme Chamber of Commerce</h3>
+            <div id="address">
+                <p>1234 Walla Walla Way</p>
+                <p>Acme, WA 98220</p>
+            </div>
+            <div id="email">
+               <p>info@acmecoc.org</p>
+               <a href="https://www.google.com/maps/place/Acme,+WA/@48.7286567,-122.2649201,13z/data=!3m1!4b1!4m5!3m4!1s0x54850876859ea62f:0xf7891d11811a8ccc!8m2!3d48.7170574!4d-122.2051584"><p>📌Location Map</p></a>
+            </div>
+            <hr>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> 🗻 Rebecca L. Jimenez 🗻 Washington</p>
+        <div id="dateMod"></div>
+    </footer>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+  </body>
+
+</html>

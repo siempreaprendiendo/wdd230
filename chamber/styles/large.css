@@ -107,4 +107,16 @@
           font-size: 12px;
         }
 
+  /* ----- Join Page ----- */
+     .joinForm, .contact, #thankyou{
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+     }
+
+     form {
+       min-width: 600px;
+       padding: 2em;
+     }
+
 }

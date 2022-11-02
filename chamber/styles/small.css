@@ -316,7 +316,7 @@ section {
   
   padding: 1em;
   font-size: 30px;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Indie Flower', cursive;
   color: black;
 }
 
@@ -385,4 +385,118 @@ section {
 
 #images h3 {
   padding: 1em;
+}
+
+/* ----- Join Page / Contact Page ----- */
+
+form, .membershipInfo, .info{
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 2%;
+
+}
+
+.info {
+  padding: 2em;
+}
+
+.membershipInfo, .info{
+  margin-bottom: 1em;
+}
+
+.membership {
+  padding: 1em;
+}
+
+.membership h3 {
+  padding: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1em;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #3F84E5;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: #3F84E5;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #3F84E5;
+}
+
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+  margin-right: 1em;
+}
+
+textarea {
+  max-width: 90%;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #3F84E5;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border: red solid 1px;
+}
+
+form label.top input:required:valid {
+  border: green solid 1px;
+}
+
+/* ------------- thankyou.html ------------------ */
+
+.thanks {
+  text-align: center;
+}
+
+.thanks h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 46pt;
+}
+
+.thanks p {
+  font-family: 'Alkalami', serif;
+  font-size: 18pt;
+  line-height: 0;
 }
