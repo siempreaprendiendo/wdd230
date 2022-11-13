@@ -548,8 +548,8 @@ form label.top input:required:valid {
 
 
 .btn:hover {
-  color: #2f2259;
-  background-image: radial-gradient(white, #d1c9f8, #990aff);
+  color: white;
+  background-color: #3F84E5;
   border-radius: 5pt;
 }
 
