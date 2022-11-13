@@ -500,3 +500,63 @@ form label.top input:required:valid {
   font-size: 18pt;
   line-height: 0;
 }
+
+/* ----------------------- Directory ---------------------- */
+
+.members section {
+  border: 1px solid black;
+  background-color: white;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  flex-basis: auto;
+}
+
+.members {
+  min-width: 20px;
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.directoryGrid { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+
+/* ------------- List View ------------ */
+
+.list section {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
+
+.list section img {
+	display: none;
+}
+
+
+/* ----------- Buttons ------------------ */
+
+
+.btn:hover {
+  color: #2f2259;
+  background-image: radial-gradient(white, #d1c9f8, #990aff);
+  border-radius: 5pt;
+}
+
+.btn {
+  padding: 15px 40px;
+  margin: 10px;
+  background: white;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px gray;
+}

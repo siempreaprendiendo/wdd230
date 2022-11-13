@@ -71,6 +71,12 @@ footer {
     text-align: center;
 }
 
+img:hover {
+    position: relative;
+    transform: scale(1.5);
+    transition: 2s;
+  }
+
 @media (max-width: 29.3rem) {
 	.cards {
 		display: block;
