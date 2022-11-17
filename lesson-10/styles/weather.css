@@ -26,3 +26,7 @@ main {
     padding: 2em;
     background-color: rgb(213, 236, 244);
 }
+
+.weatherInfo figure img {
+    width: 5em;
+}
