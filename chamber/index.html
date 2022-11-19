@@ -46,10 +46,7 @@
        <section id="siteName">
             <h3>Welcome to Acme Washington</h3>
             <picture>
-                  <source srcset="images/wdd230-org400.webp" media="(min-width: 400px) and (max-width: 599px)">
-                  <source srcset="images/wdd230-org600.webp" media="(min-width: 600px) and (max-width: 799px)">
-                  <source srcset="images/wdd230-org800.webp" media="(min-width: 800px)"> 
-                <img src="images/wdd230-org200.webp" alt="wdd230 small">               
+                <img src="images/acmeHero.jpg" alt="Acme Washington">               
             </picture>
             <!-- <img src="images/acmeHero.jpg" alt="City of Acme"> -->
         </section>
@@ -60,24 +57,16 @@
        <section id="weather">
             <h3>Weather</h3>
             <div>
+                <p><strong><span id="current-temp"></span> &deg;F</strong></p>
                 <figure>
-                    <img src="images/weather.webp" alt="Cloudy Sun" id="weather-icon" />
+                    <img src="" alt="" id="weather-icon" />
                     <figcaption></figcaption>
                 </figure>
-                <p>Enter two numbers:</p>
-                <div class="input">
-                    <label>Temperature</label>
-                    <input type="text" id="tempF">
+                <div>
+                    <p>Windspeed: <span id="windspeed"></span></p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
                 </div>
-                <div class="input">
-                    <label>Wind Speed</label>
-                    <input type="text" id="speed">
-                </div>
-                <div class="processing">
-                    <button onclick="doInputOutput()">Wind Chill</button>
-                </div>
-                <div id="display1"></div>
-            </div>            
+            </div>    
        </section>
        <section id="newRelease">
             <img src="" alt="">
@@ -112,7 +101,7 @@
     </footer>
     <script src="scripts/home.js" defer></script>
     <script src="scripts/banner.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/weatherapi.js" defer></script>
   </body>
 
 </html>
