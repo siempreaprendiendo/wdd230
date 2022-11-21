@@ -118,5 +118,13 @@
        min-width: 600px;
        padding: 2em;
      }
+/* ----------- Contact Page ---------------- */
 
+  .info {
+    min-width: 80vh;
+  }
+
+      
 }
+
+ /* end large */

@@ -212,7 +212,7 @@ nav ul.open {
 
 
 /* ----- Body ----- */
-
+/* ----- Hero ----- */
 #siteName, #newRelease, #event, #weather {
   padding: 0;
   position: relative;
@@ -248,6 +248,7 @@ nav ul.open {
   background: rgba(153, 10, 255, 0.2);
 }
 
+/* ----- New Release ----- */
 
 #newRelease h3 {
   position: absolute;
@@ -268,6 +269,8 @@ nav ul.open {
   padding: 2em;
 }
 
+/* ----- Event ----- */
+
 #event, #siteName {
   background-color: black;
 }
@@ -281,9 +284,19 @@ nav ul.open {
   color: white;
 }
 
+/* ----- Spotlight ------ */
+
 #spotlights section:nth-child(3) {
   display: none;
 }
+
+#spotlights img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}d
+
+/* ----- Join ----- */
 
 #join {
   display: none;
@@ -513,7 +526,6 @@ form label.top input:required:valid {
 
 .members {
   min-width: 20px;
-  margin-left: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
