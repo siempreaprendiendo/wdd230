@@ -157,8 +157,9 @@
         
 /* ----- Contact Page ----- */
 
-.info {
-  min-width: 55vh;
-}
+      .info {
+        min-width: 55vh;
+      }
 
 }
+

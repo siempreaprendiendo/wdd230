@@ -291,10 +291,10 @@ nav ul.open {
 }
 
 #spotlights img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 100%;
-}d
+}
 
 /* ----- Join ----- */
 
@@ -370,8 +370,6 @@ section {
 #display1 {
   background-color: white;
 }
-
-/* ----- End of Weather ----- */
 
 /* ----- discover page css ----- */
 

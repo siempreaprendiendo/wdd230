@@ -124,6 +124,12 @@
     min-width: 80vh;
   }
 
+
+/* ----- Spotlights ----- */
+
+    #spotlights img {
+      width: 100%;
+    }
       
 }
 
