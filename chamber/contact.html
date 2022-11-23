@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Chamber of Commerce</title> 
+    <meta name="description" content="Here the consumer and business owner can request information and ask questions about the commerce here in Acme.">
+    <link rel="shortcut icon" href="favicon-1.ico">
+    <link rel="sylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <header>
+        <img src="images/acocLogo1.webp" alt="Acme Logo">
+        <div class="heading">
+            <h1>Acme</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest logo"></a>
+        </div>
+        <div class="menuBtn">
+            <div class="menuBtn-burger"></div>
+        </div> 
+        <div class="date"></div>
+    </header>
+    <div class="date"></div>
+    <main class="contact">
+        <div class="info">
+            <h3>Contact Information</h3>
+            <p>Acme Chamber of Commerce</p>
+            <p>1234 Walla Walla Way</p>
+            <p>Acme, WA 98220</p>
+            <P>206-555-0001</P>
+            <h3>Hours</h3>
+            <p>Monday - Friday 10am - 5pm</p>
+            <p>Saturdays 10am - 12pm</p>
+            <h3>Chamber Leaders</h3>
+            <p><strong>Bugs Bunny</strong></p>
+            <p>President</p>
+            <P>bbunny@gmail.com</P>
+            <p><strong>Lola Bunny</strong></p>
+            <p>Vice President</p>
+            <P>lbunny@gmail.com</P>
+            <p><strong>Daffy Duck</strong></p>
+            <p>Secretary</p>
+            <P>dduck@gmail.com</P>
+        </div>
+    
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Information Request Form</legend>
+                <label class="top">First Name* <input type="text" name="title" required></label>
+                <label class="top">Last Name* <input type="text" name="title" required></label>
+                <label class="top">E-mail* <input type="text" name="title" required></label>
+                <label class="top">Phone Number* <input type="text" name="title" required></label>
+                <label class="top"><p>Questions or Comments</p><textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you like to be put on our monthly newsletter mailing list?</legend>
+                <label class="sbs"><input type="radio" name="membership" value="np">Yes</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">No</label>
+            </fieldset>
+            
+            <input type="submit" value="Contact Us!" name="joinButton" class="submitBtn">
+            <input type="hidden" value="Date Visited" id="dateVisited">
+        </form>       
+    </main>
+    <footer>
+        <div>
+            <img src="images/acocLogo1.webp" alt="Acme Logo">
+            <h3>Acme Chamber of Commerce</h3>
+            <div id="address">
+                <p>1234 Walla Walla Way</p>
+                <p>Acme, WA 98220</p>
+            </div>
+            <div id="email">
+               <p>info@acmecoc.org</p>
+               <a href="https://www.google.com/maps/place/Acme,+WA/@48.7286567,-122.2649201,13z/data=!3m1!4b1!4m5!3m4!1s0x54850876859ea62f:0xf7891d11811a8ccc!8m2!3d48.7170574!4d-122.2051584"><p>📌Location Map</p></a>
+            </div>
+            <hr>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> 🗻 Rebecca L. Jimenez 🗻 Washington</p>
+        <div id="dateMod"></div>
+    </footer>
+    <script src="js/chamber.js" defer></script>
+
+  </body>
+
+</html>

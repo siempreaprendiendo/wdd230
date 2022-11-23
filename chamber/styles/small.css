@@ -216,11 +216,12 @@ nav ul.open {
 #siteName, #newRelease, #event, #weather {
   padding: 0;
   position: relative;
+  overflow: hidden;
 }
 
 #siteName h3{
   position: absolute;
-  top: 25px;
+  top: 55px;
   right: 16px;
   font-family: 'Alkalami', serif;
   font-size: 5vw;
@@ -228,12 +229,10 @@ nav ul.open {
 }
 
 #siteName img {
-  display: block;
-  width:100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   padding: 0;
-  border-radius: 10px;
+
 }
 
 #siteName div {
@@ -246,6 +245,21 @@ nav ul.open {
   padding: 1em;
   border-radius: 15pt;
   background: rgba(153, 10, 255, 0.2);
+}
+
+#action-call {
+  display: none;
+}
+
+.button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #b20d30;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  width: 15rem;
+  text-decoration: none;
 }
 
 /* ----- New Release ----- */
@@ -277,11 +291,24 @@ nav ul.open {
 
 #event h3 {
   position: absolute;
-  top: 55%;
   width: 100%;
-  font-size: 7.5vw;
+  font-size: 5.5vw;
   font-family: 'Alkalami', serif;
   color: white;
+  top: 5%;
+}
+
+#event p {
+  position: absolute;
+  color: white;
+  padding: 2em;
+  top: 10%;
+}
+
+#event img {
+  height: auto;
+  object-fit: cover;
+  opacity: 50%;
 }
 
 /* ----- Spotlight ------ */
@@ -310,7 +337,6 @@ section {
     padding: 1rem;
     margin: 0.5rem;
     box-shadow: 5px 5px 5px #999;
-    min-height: 15rem;
 }
 
 /* ----- Weather ----- */
@@ -537,11 +563,12 @@ form label.top input:required:valid {
 
 /* ------------- List View ------------ */
 
+
 .list section {
 	display: flex;
 	align-items: center;
-	flex-direction: row;
-	justify-content: left;
+	flex-direction: row; 
+  min-height: 5rem;
 }
 
 .list section > * {

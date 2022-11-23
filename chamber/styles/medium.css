@@ -28,18 +28,17 @@
         grid-area: 5/2/6/3;
         }
   
+        #event {
+          max-height: 500px ;
+        }
+
         #event h3 {
           font-size: 3.5vw;
           padding: 1em;
-          top: 20%;
+          top: 1%;
+          line-height: 1.25em;
         }
-        
-        #event p {
-          top: 40%;
-          font-size: 18px;
-  
-        }
-  
+
         #join {
           display: block;
           padding: 0;
@@ -160,6 +159,16 @@
       .info {
         min-width: 55vh;
       }
+
+
+/* ----- hero join button ----- */
+
+  #action-call {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 2.5%;
+  }
 
 }
 
