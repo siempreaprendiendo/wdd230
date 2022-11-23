@@ -352,21 +352,18 @@ section {
   font-size: 18pt;
 }
 #weather h3 {
-  
-  padding: 1em;
+  padding: 0.5em;
   font-size: 30px;
   font-family: 'Indie Flower', cursive;
   color: black;
 }
 
 #weather p {
-  padding: 0.5em 0 0  0 ;
   font-weight: bold;
 }
 
 #weather img {
   border-radius: 50%;
-  padding: .5em;
 }
 
 .input {
@@ -379,8 +376,6 @@ section {
 }
 
 #weather h3 {
-  
-  padding: 1em;
   font-size: 30px;
   font-family: 'Alkalami', serif;
   color: black;
@@ -601,7 +596,8 @@ form label.top input:required:valid {
 /* ------ Contact ------ */
 
 .contactForm {
-  margin: 2em 15% 2em 15%;
+  margin-top: 2em;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;

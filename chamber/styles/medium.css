@@ -20,30 +20,26 @@
         }
         #join {
           grid-area: 4/1/5/3;
+          display: block;
+          padding: 0;
+          position: relative;
+          text-align: center;
         }
+
         #event {
           grid-area: 5/1/6/2;
+          max-height: 400px;
         }
+        
         #weather {
         grid-area: 5/2/6/3;
         }
   
-        #event {
-          max-height: 500px ;
-        }
-
         #event h3 {
           font-size: 3.5vw;
           padding: 1em;
           top: 1%;
           line-height: 1.25em;
-        }
-
-        #join {
-          display: block;
-          padding: 0;
-          position: relative;
-          text-align: center;
         }
   
         #join h3 {
