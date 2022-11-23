@@ -21,14 +21,12 @@ function buildCards(data) {
         let card = document.createElement('section');
         let name = document.createElement('h3');
         let bname = document.createElement('h2');
-        let address = document.createElement('p');
         let phn = document.createElement('p');
         let wbst = document.createElement('p');
         let mblv = document.createElement('p');
 
             name.innerHTML = `${member.name} ${member.lastName}`;
             bname.innerHTML = `<strong>${member.businessName}</storng>`;
-            address.innerHTML = `📇: ${member.address}`;
             phn.innerHTML = `📞: ${member.phone}`;
             wbst.innerHTML = `${member.website}`;
             mblv.innerHTML = `Mmbr Lvl: <strong>${member.memLvl}<strong>`;
