@@ -265,7 +265,8 @@ nav ul.open {
 /* ----- New Release ----- */
 
 #newRelease h3 {
-  position: absolute;
+  position: relative;
+  padding-top: 1.5rem;
   top: 10%;
   width: 100%;
   font-size: 36px;
@@ -273,14 +274,13 @@ nav ul.open {
 }
 
 #newRelease p {
-  position: absolute;
-  top: 30%;
+  position: relative;
   width: 100%;
   text-align: center;
   font-size: 24px;
   color: black;
   object-fit: contain;
-  padding: 2em;
+  padding: 0 2rem 2rem 2rem;
 }
 
 /* ----- Event ----- */
@@ -347,23 +347,30 @@ section {
   background-color: rgb(212, 238, 248);
 }
 #weather div {
-  padding: .5em;
+  padding-bottom: 0.5em;
   font-family: 'Indie Flower', cursive;
   font-size: 18pt;
 }
 #weather h3 {
-  padding: 0.5em;
+  padding-top: 1em;
   font-size: 30px;
   font-family: 'Indie Flower', cursive;
   color: black;
+  line-height: 0.5em;
 }
-
+em
 #weather p {
   font-weight: bold;
+  padding: 0;
 }
 
 #weather img {
   border-radius: 50%;
+}
+
+#weather figcaption {
+  line-height: 0;
+  padding-bottom: 0.5em;
 }
 
 .input {
