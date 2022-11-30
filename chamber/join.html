@@ -74,7 +74,9 @@
             <fieldset>
                 <legend>Business Information</legend>
                 <label class="top">Business Name* <input type="text" name="title" required></label>
-                <label class="top">Business Possition Title <input type="text" name="title" ></label>
+                <label class="top">Business Possition Title 
+                    <input type="text"placeholder="letters/spaces only, 7 character min"
+                    pattern="[A-Za-z\s-]{7,}" name="title"></label>
                 <label class="top"><p>Business Description</p><textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
             </fieldset>
             <fieldset>
@@ -92,7 +94,7 @@
     </main>
     <footer>
         <div>
-            <img src="images/acocLogo1.webp" alt="Acme Logo">
+            <img class="footerLogo" src="images/acocLogo1.webp" alt="Acme Logo">
             <h3>Acme Chamber of Commerce</h3>
             <div id="address">
                 <p>1234 Walla Walla Way</p>

@@ -28,6 +28,7 @@ function buildCards(data) {
 
             name.innerHTML = `${member.name} ${member.lastName}`;
             bname.innerHTML = `<strong>${member.businessName}</storng>`;
+            address.innerHTML = `📇: ${member.address}`;
             phn.innerHTML = `📞: ${member.phone}`;
             wbst.innerHTML = `${member.website}`;
             mblv.innerHTML = `Mmbr Lvl: <strong>${member.memLvl}<strong>`;
