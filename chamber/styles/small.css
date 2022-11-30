@@ -374,7 +374,7 @@ section {
 }
 
 #weather img {
-  size: 100em;
+  width: 5em;
 }
 
 #weather figcaption {
