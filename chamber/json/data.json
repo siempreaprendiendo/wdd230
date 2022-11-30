@@ -4,91 +4,100 @@
         "name": "Tazmanian",
         "lastName": "Devil",
         "businessName": "Manian Mechanics",
-        "address": "123 Moon drive, Acme, WA 98220",
+        "address": "123 Devil Dr., Acme, WA 98220",
         "phone": "206-555-7305",
         "website": "manianmechanics.com",
         "memLvl": "Silver",
-        "logo": "gear2.webp"
+        "logo": "gear2.webp",
+        "alt": "Gear and Wrench"
       },
       {
         "name": "Wile E.",
         "lastName": "Cayote",
         "businessName": "Wiley Electronics",
-        "address": "234 Moon drive, Acme, WA 98220",
+        "address": "234 Cayote Ct., Acme, WA 98220",
         "phone": "206-555-7181",
         "website": "wileyctronics.com",
         "memLvl": "Gold",
-        "logo": "circuit.webp"
+        "logo": "circuit.webp",
+        "alt": "Circuts"
       },
       {
         "name": "Tweety",
         "lastName": "Bird",
         "businessName": "Tweety's Sweets",
-        "address": "345 Moon drive, Acme, WA 98220",
+        "address": "345 Bird Blvd, Acme, WA 98220",
         "phone": "206-555-1310",
         "website": "tweetysweets.com",
         "memLvl": "Gold",
-        "logo": "candy.webp"
+        "logo": "candy.webp",
+        "alt": "Candy Shop Icon"
       },
       {
         "name": "Marvin",
         "lastName": "Martian",
         "businessName": "Marvin R & D",
-        "address": "456 Moon drive, Acme, WA 98220",
+        "address": "456 Mars St., Acme, WA 98220",
         "phone": "206-555-9251",
         "website": "marvinrnd.org",
         "memLvl": "Non-Profit",
-        "logo": "research.webp"
+        "logo": "research.webp",
+        "alt": "Research Tools"
       },
       {
         "name": "Bugs",
         "lastName": "Bunny",
         "businessName": "Bunny Farm",
-        "address": "567 Moon drive, Acme, WA 98220",
+        "address": "567 Bunny Blvd, Acme, WA 98220",
         "phone": "206-555-8171",
         "website": "bunnyfarm.com",
         "memLvl": "Bronze",
-        "logo": "farm.webp"
+        "logo": "farm.webp",
+        "alt": "Farm Logo"
       },
       {
         "name": "Lola",
         "lastName": "Bunny",
         "businessName": "Lola Fashion",
-        "address": "234 Moon drive, Acme, WA 98220",
+        "address": "234 Bunny Blvd, Acme, WA 98220",
         "phone": "206-555-0121",
         "website": "lolafashion.com",
         "memLvl": "Gold",
-        "logo": "fashion.webp"
+        "logo": "fashion.webp",
+        "alt": "Black Dress/Red Hat"
       },
       {
         "name": "Yosemite",
         "lastName": "Sam",
         "businessName": "Yosemite Tavern",
-        "address": "587 Moon drive, Acme, WA 98220",
+        "address": "587 Yosemite Cir., Acme, WA 98220",
         "phone": "206-555-0104",
         "website": "yosemitetavern.com",
         "memLvl": "Bronze",
-        "logo": "tavern.webp"
+        "logo": "tavern.webp",
+        "alt": "Root Beer Sign"
       },
       {
         "name": "Speedy",
         "lastName": "Gonzales",
         "businessName": "Speedy Delivery",
-        "address": "451 Moon drive, Acme, WA 98220",
+        "address": "451 Speedy St., Acme, WA 98220",
         "phone": "206-555-8359",
         "website": "speedydelivery.com",
         "memLvl": "Gold",
-        "logo": "spaceship.webp"
+        "logo": "spaceship.webp",
+        "alt": "Rocketship"
       },
       {
         "name": "Daffy",
         "lastName": "Duck",
         "businessName": "Daffy Medical Clinic",
-        "address": "598 Moon drive, Acme, WA 98220",
+        "address": "598 Daffy drive, Acme, WA 98220",
         "phone":"206-555-7810",
         "website": "daffymd.org",
         "memLvl": "Silver",
-        "logo": "clinic.webp"
+        "logo": "clinic.webp",
+        "alt": "First Aid Cross"
       }
     ]
   }

@@ -33,7 +33,7 @@ function buildCards(data) {
             wbst.innerHTML = `${member.website}`;
             mblv.innerHTML = `Mmbr Lvl: <strong>${member.memLvl}<strong>`;
             img.setAttribute('src', `images/${member.logo}`);
-            img.setAttribute('alt', `${member.businessName}`);
+            img.setAttribute('alt', `${member.alt}`);
             img.setAttribute('loading', 'lazy');
         
             card.append(img);
