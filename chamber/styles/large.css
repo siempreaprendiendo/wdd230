@@ -74,6 +74,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;     
     }
+
+    #siteName {
+      max-height: 56.5vw;
+    }
   
     #siteName div {
       bottom: 30px;

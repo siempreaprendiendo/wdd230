@@ -58,16 +58,17 @@
         <section id="weather">
             <h3>Weather</h3>
             <div>
-                <p><strong><span id="current-temp"></span> &deg;F</strong></p>
+                <p class="temp"><strong><span id="current-temp"></span> &deg;F</strong></p>
                 <figure>
                     <img src="" alt="" id="weather-icon" />
                     <figcaption></figcaption>
                 </figure>
                 <div>
-                    <p>Windspeed: <span id="windspeed"></span></p>
-                    <p>Wind Chill: <span id="windchill"></span></p>
+                    <h4>Windspeed: <span id="windspeed"></span></h4>
+                    <h4>Wind Chill: <span id="windchill"></span></h4>
                 </div>
-            </div>    
+            </div>
+            <p class="credit">Weather provided by OpenWeatherMap</p>    
         </section>
         <section id="newRelease">
             <h3>New Release</h3>
@@ -82,15 +83,16 @@
     </main>
     <footer>
         <div>
-            <img src="images/acocLogo1.webp" alt="Acme Logo">
+            <img class="footerLogo" src="images/acocLogo1.webp" alt="Acme Logo">
             <h3>Acme Chamber of Commerce</h3>
-            <div id="address">
+            <div id="location">
                 <p>1234 Walla Walla Way</p>
                 <p>Acme, WA 98220</p>
             </div>
             <div id="email">
                <p>info@acmecoc.org</p>
                <a href="https://www.google.com/maps/place/Acme,+WA/@48.7286567,-122.2649201,13z/data=!3m1!4b1!4m5!3m4!1s0x54850876859ea62f:0xf7891d11811a8ccc!8m2!3d48.7170574!4d-122.2051584"><p>📌Location Map</p></a>
+               <a href="https://openweathermap.org/" target="_blank"><img class="owmIcon" src="images/OpenWeatherMap.webp" alt="Open Weather Map logo"></a>
             </div>
             <hr>
         </div>
