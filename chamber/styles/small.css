@@ -159,11 +159,6 @@ nav ul.open {
 
 /* Hamburger Button */
 .menuBtn {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
   cursor: pointer;
   transition: all .5s ease-in-out;
   margin: .5em;
@@ -176,6 +171,9 @@ nav ul.open {
   border-radius: 5px;
   box-shadow: 0 2px 5px #0e2207;
   transition: all .5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menuBtn-burger::before, .menuBtn-burger::after {
@@ -411,7 +409,14 @@ section {
 /* ----- discover page css ----- */
 
 #images {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+#images img {
+  object-fit: contain;
 }
 
 #images section {
@@ -429,6 +434,7 @@ section {
   box-shadow: 5px 5px 5px #999;
   background: black;
   padding: 0.5em;
+  overflow: hidden;
 }
 
 #images h3 {
@@ -571,6 +577,7 @@ form label.top input:required:valid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 } 
 
 /* ------------- List View ------------ */
