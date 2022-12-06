@@ -5,5 +5,10 @@
 }
 
 html {
-    background-image: ;
+    background-image: url(https://siempreaprendiendo.github.io/wdd230/final/images/background2.webp); 
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
 }
