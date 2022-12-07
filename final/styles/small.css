@@ -4,11 +4,243 @@
     box-sizing: border-box;
 }
 
+/*  font-family: 'Bree Serif', serif;
+    font-family: 'Klee One', cursive; */
+
 html {
-    background-image: url(https://siempreaprendiendo.github.io/wdd230/final/images/background2.webp); 
+    background: url(https://siempreaprendiendo.github.io/wdd230/final/images/background2.webp) no-repeat fixed; 
     background-size: cover;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif; 
+    line-height: 0.85em;
+}
+
+h2, p {
+    font-family: 'Klee One', cursive;
+}
+
+/* ----- Header / Footer ----- */
+
+header, footer {
+    background-color: #125B00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 1em 0 1em;
+    margin: 0;
+}
+
+.headBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 28pt;
+    margin: 0 0 0 0.5em;
+}
+
+header h2 {
+    font-size: 12pt;
+    margin: 0 0 0 0.5em;
+}
+
+header .logo {
+    width: 4rem;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social img {
+    width: 1.5em;
+    margin: 2px;
+}
+
+footer .logo {
+    width: 4rem;
+    padding: 1.5em 0 1.5em 0;
+    margin-left: 0.25em;
+}
+
+footer h1 {
+    margin: 0;
+    font-size: 14pt;
+}
+
+footer p {
+    font-size: 12pt;
+}
+
+footer a {
+    margin: 0.75em;
+    font-size: 12pt;
+    color: white;
+}
+
+#businessInfo {
+    margin: 1em;
+}
+
+.address {
+    margin: 0.5em 0 0.5em 0;
+}
+
+/* ------ Nav ------ */
+
+#menuArea {
+    display: flex;
+}
+
+#menuArea.open {
+    background-color:rgba(137, 17, 46, 0.75);
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+nav button {
+    margin: .2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+  
+nav ul{
+    padding: 1em 0.5em 1.5em 0;
+    list-style: none;
+    font-family: 'Klee One', cursive;
+    text-align: left;
+}
+
+nav ul li {
+    margin: 1em;
+}
+  
+a:link { text-decoration: none; }
+a:hover {
+    color: yellow;
+    font-size: larger;
+}
+  
+nav ul li a {
+    color: white;
+    font-size: 18px;  
+}
+  
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+  
+nav ul {display: none;}
+nav ul.open {
+    display: block;
+}
+
+/* ----- Hamburger Menu ------ */
+.menuBtn {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin: .5em;
+    padding: 1.5em;
+}
+      
+.menuBtn-burger {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0e2207;
+    transition: all .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+      
+.menuBtn-burger::before, .menuBtn-burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0e2207;
+    transition: all .5s ease-in-out;
+}
+      
+.menuBtn-burger::before {
+    transform: translateY(-10px);
+}
+.menuBtn-burger::after {
+    transform: translateY(10px);
+}
+      
+    /* menu Animation*/
+      
+    .menuBtn.open .menuBtn-burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+            
+    .menuBtn.open .menuBtn-burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        box-shadow: none;
+        background: white;
+    }
+            
+    .menuBtn.open .menuBtn-burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        box-shadow: none;
+        background: white;
+    }
+
+
+/* Weather */
+
+#currWeather, #threeDayForcast, .fcBlock {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    margin: 1em;
     text-align: center;
-    position: fixed;
+    padding: 0.5em;
+}
+     
+.fcBlock { 
+    margin: 0.5em;
     width: 100%;
     height: auto;
+}
+     
+#weather-icon {
+    width: 5em;
+}
+     
+#w-icon1, #w-icon2, #w-icon3 {
+    width: 2.5em;
+}
+     
+#currWeather figure {
+    display: flex;
+    flex-direction: column;
+}
+     
+.today, .day1, .day2, .day3 {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5em;
 }
