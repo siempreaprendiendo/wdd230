@@ -2,7 +2,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#weatherCap');
-const currentHum = document.querySelector('currHum');
+const currentHum = document.querySelector('#currHum');
 const tempOne = document.querySelector('#futTemp1');
 const tempTwo = document.querySelector('#futTemp2');
 const tempThree = document.querySelector('#futTemp3');
@@ -12,9 +12,9 @@ const day2Icon = document.querySelector('#w-icon2');
 const day2Desc = document.querySelector('.cap2');
 const day3Icon = document.querySelector('#w-icon3');
 const day3Desc = document.querySelector('.cap3');
-const day1hum = document.querySelector('futHum1');
-const day2hum = document.querySelector('futHum2');
-const day3hum = document.querySelector('futHum3');
+const day1hum = document.querySelector('#futHum1');
+const day2hum = document.querySelector('#futHum2');
+const day3hum = document.querySelector('#futHum3');
 
 
 const url = `https://api.openweathermap.org/data/2.5/onecall?lat=33.158092&lon=-117.350594&units=imperial&exclude=minutely,hourly&appid=5b3201a7353e669490198c7f4c0758ec`;
