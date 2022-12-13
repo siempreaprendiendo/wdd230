@@ -246,7 +246,7 @@ nav ul.open {
     margin: 1em 1em 2em 1em;
 }
 
-#product h2 {
+#product h2, #summary h2 {
     font-size: 24pt;
     margin-top: 0.5em;
 }
@@ -270,13 +270,13 @@ nav ul.open {
     text-align: center;
     padding: 1em;
     max-width: 300px;
-    margin: auto;
+    margin: 1.5em auto;
 }
      
 .fcBlock, .cwBlock { 
     margin: 0.5em;
     height: auto;
-    min-width: 200px;
+    min-width: 225px;
     background-color: rgb(186, 229, 245);
 }
           
@@ -306,47 +306,51 @@ nav ul.open {
         border-radius: 1%;
     }
 
-      .customer, .order {
+    .customer, .order {
         display: flex;
         flex-direction: column;
         margin: 1em;
-      }
+    }
 
-      form .top {
+    form .top {
         padding: 1em;
-      }
+    }
 
-      select {
+    select {
         margin-bottom: 12px;
         padding: 12px;
         font-family: 'Libre Baskerville', serif;
-      }
+    }
 
-      input, textarea {
+    input, textarea {
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid black;
         border-radius: 4px;
         resize: vertical;
         margin: 2px 12px 12px 12px;
-      }
+    }
 
-      textarea {
+    textarea {
         width: 95%;
-      }
+    }
 
-      .submitBtn {
+    .submitBtn {
         width: 10em;
         margin: 2em;
         align-self: center;
         font-family: 'Klee One', cursive;
         font-size: x-large;
-      }
+    }
 
-      label{
+    label{
         display: inline-block;
         width: 250px;
         margin: 12px 12px 2px 12px;
         font-family: 'Klee One', cursive;
         font-weight: bold;
+    }
+
+    legend {
+        color: #89112E;
     }
 
