@@ -79,6 +79,26 @@
 
     input, textarea {
         width: 125%;
+    }
+
+    #formArea {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: auto;
+        background: white;
+        border-radius: 1%;
+        width: none;
+    }
+
+    fieldset {
+        width: none;
+        margin: auto;
+    }
+
+    textarea {
+        width: 140%;
+        align-self: center;
       }
 
 }

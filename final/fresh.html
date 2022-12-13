@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Klee+One:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -54,20 +54,14 @@
                     <h2>Specialty Drinks Made to Order</h2>
                     <p>Choose three different fruits to complete your order.</p>
                     <label for="fruit">Choose a Fruit:</label>
-
-                        <select id="fruits" name="fruits"></select>
-
+                        <select class="fruits" name="menu"></select>
                     <label for="fruit">Choose a Fruit:</label>
-                        <select name="fruits">
-                            <option id="fruit2" ></option>
-                        </select>
+                        <select class="fruits2" name="menu"></select>
                     <label for="fruit">Choose a Fruit:</label>
-                        <select name="fruits">
-                            <option id="fruit3" value="volvo"></option>
-                        </select>    
+                        <select class="fruits3" name="menu"></select>
                     <label class="textBox">Special Instructions<textarea rows="4" cols="50" name="textarea" placeholder="Enter your text here..."></textarea></label>
                 </fieldset>
-                <input type="submit" value="Order Now" name="joinButton" class="submitBtn">
+                <input type="submit" value="Order Now" name="orderButton" class="submitBtn">
                 <input type="hidden" id="dateVisited" name="submissionTime">
             </div>
         </form> 
@@ -89,7 +83,7 @@
     </footer>
     
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/fruitmenu.js"></script>
+    <script src="scripts/fruitmenu.js" defer></script>
     
 </body>
 </html>
