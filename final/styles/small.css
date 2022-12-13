@@ -284,3 +284,60 @@ nav ul.open {
     font-family: 'Bree Serif', serif;
     font-size: 1.5em;
 }
+
+/* ------------- Fresh Page -------------- */
+
+    /* ----- Form ----- */
+
+    #orderForm {
+        background-color: rgba(7, 72, 176, 0.6);
+        padding: 1.5em;
+        margin: auto;
+        max-width: 500px;
+
+    }
+
+     #formArea {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: auto;
+        background: white;
+        border-radius: 1%;
+    }
+
+      .customer, .order {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+      }
+
+      form .top {
+        padding: 1em;
+      }
+
+      .fruits {
+        margin-bottom: 12px;
+      }
+
+      input, textarea {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        margin: 2px 12px 12px 12px;
+      }
+
+      .submitBtn {
+        width: 10em;
+        margin: 2em;
+        align-self: center;
+      }
+
+      label{
+        display: inline-block;
+        width: 250px;
+        margin: 12px 12px 2px 12px;
+    }
+

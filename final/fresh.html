@@ -40,17 +40,59 @@
             </ul>
         </nav>
     </div>
-    <main></main>
-    <footer>
-       <img class="logo" src="images/logo.webp" alt="Strawberry Logo"> 
-       <div id="businessInfo">
-            <h1>Bountiful Foods</h1>
-            <div class="address">
-                <p>1234 Smoothie Dr.</p> 
-                <p>Carlsbad, CA 92010</p>
+    <main>
+        <form id="orderForm" method="" action="">
+            <div id="formArea">
+                <fieldset class="customer">
+                    <legend>Customer Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </fieldset>
+                <fieldset class="order">
+                    <legend>Order Form</legend>
+                    <h2>Specialty Drinks Made to Order</h2>
+                    <p>Choose three different fruits to complete your order.</p>
+                    <label for="fruit">Choose a Fruit:</label>
+                        <select class="fruits" name="fruits">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    <label for="fruit">Choose a Fruit:</label>
+                        <select class="fruits" name="fruits">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    <label for="fruit">Choose a Fruit:</label>
+                        <select class="fruits" name="fruits">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>    
+                    <label class="textBox">Special Instructions<textarea rows="4" cols="50" name="textarea" placeholder="Enter your text here..."></textarea></label>
+                </fieldset>
+                <input type="submit" value="Order Now" name="joinButton" class="submitBtn">
+                <input type="hidden" id="dateVisited" name="submissionTime">
             </div>
-            <p>📞(760)555-1234</p>
-       </div>
+        </form> 
+    </main>
+    <footer>
+        <div id="logoBlock">
+            <img class="logo" src="images/logosm.webp" alt="Strawberry Logo"> 
+            <div id="businessInfo">
+                <h1>Bountiful Foods</h1>
+                <div class="address">
+                    <p>1234 Smoothie Dr.</p> 
+                    <p>Carlsbad, CA 92010</p>
+                </div>
+                <p>📞(760)555-1234</p>
+            </div>
+        </div>
        <a href="">Our📌Location</a>
        <a href="">Contact Us</a>
     </footer>

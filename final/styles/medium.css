@@ -74,4 +74,11 @@
         justify-content: center;
     }
 
+
+    /* ----- Form ----- */
+
+    input, textarea {
+        width: 125%;
+      }
+
 }
