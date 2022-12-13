@@ -1,4 +1,77 @@
 @media only screen and (min-width: 64rem) {
 
-    
+/* -----------Main Page------------ */
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+  }
+
+
+  #summary {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #summary h1 {
+    padding: 0.5em;
+  }
+
+  #summary p {
+    margin: 0 2em;
+  }
+
+  /* ----- Summary / Product ----- */
+
+  #product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em;
+  }
+
+  #product h2 {
+    margin: 1em;
+  }
+
+  .pelement {
+    flex-basis: 25%;
+  }
+
+  #product img {
+    width: 25%;
+    height: 25%;
+    margin: 1em;
+  }
+
+  #summary {
+    padding: 2em;
+  }
+
+  #summary img {
+    min-width: 500px;
+  }
+
+    /* ----- Weather ----- */
+
+    #weather {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    #currWeather {
+      flex-basis: 25%;
+    }
+  
+    .cwBlock {
+      padding: 0.5em;
+      margin: 1.5em
+    }
+  
+    #threeDayForcast {
+      flex-basis: 75%;
+      min-height: 315px;
+    }
+
 }

@@ -1,4 +1,77 @@
 @media only screen and (min-width: 32.5em) {
 
+/* ----- Weather ----- */
+    
+    
+    #currWeather {
+        max-width: 300px;
+    }
+    
+    .cwBlock {
+        min-width: 250px;
+    }
+    
+    #threeDayForcast {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: none;
+    }
+
+    .fcBlock {
+        flex-basis: 30%;      
+        min-width: 250px;
+    }
+
+    #threeDayForcast h2 {
+        flex-basis: 100%;
+    }
+
+    /* ----- Summary / Product ----- */
+
+    #product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        padding: 1.5em;
+    }
+
+    #product div {
+        align-self: center;
+    }
+
+    #dimg1 {
+        grid-area: 1/1/2/2;
+    }
+
+    #pd1 {
+        grid-area: 1/2/2/3;
+    }
+
+    #dimg1 {
+        grid-area: 2/2/3/3;
+    }
+
+    #pd2 {
+        grid-area: 2/1/3/2;
+    }
+
+    #product img {
+        max-width: 100%;
+    }
+
+    /* ----- Footer ----- */
+
+    footer .logo {
+        display: grid;
+        width: 20%;
+        height: auto;
+        padding: 1.5em 0 1.5em 0;
+        margin-left: 0.25em;
+    }
+
+    #logoBlock {
+        justify-content: center;
+    }
 
 }

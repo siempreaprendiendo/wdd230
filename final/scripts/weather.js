@@ -54,7 +54,7 @@ function displayResults(weatherData) {
     }
 
     currentTemp.innerHTML = weatherData.current.temp.toFixed(1);
-    const imagesrc = `https://openweathermap.org/img/w/${weatherData.current.weather[0].icon}.png`;
+    const imagesrc = `https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`;
     const desc = weatherData.current.weather[0].description;
     weatherIcon.setAttribute('src', imagesrc);
     weatherIcon.setAttribute('alt', desc);
@@ -63,7 +63,7 @@ function displayResults(weatherData) {
     
     
     tempOne.innerHTML = weatherData.daily[a].temp.day.toFixed(1);
-    const imagesrc1 = `https://openweathermap.org/img/w/${weatherData.daily[a].weather[0].icon}.png`;
+    const imagesrc1 = `https://openweathermap.org/img/wn/${weatherData.daily[a].weather[0].icon}@2x.png`;
     const desc1 = weatherData.daily[a].weather[0].description;
     day1Icon.setAttribute('src', imagesrc1);
     day1Icon.setAttribute('alt', desc1);
@@ -71,7 +71,7 @@ function displayResults(weatherData) {
     day1hum.innerHTML = weatherData.daily[a].humidity;
 
     tempTwo.innerHTML = weatherData.daily[b].temp.day.toFixed(1);
-    const imagesrc2 = `https://openweathermap.org/img/w/${weatherData.daily[b].weather[0].icon}.png`;
+    const imagesrc2 = `https://openweathermap.org/img/wn/${weatherData.daily[b].weather[0].icon}@2x.png`;
     const desc2 = weatherData.daily[b].weather[0].description;
     day2Icon.setAttribute('src', imagesrc2);
     day2Icon.setAttribute('alt', desc2);
@@ -79,7 +79,7 @@ function displayResults(weatherData) {
     day2hum.innerHTML = weatherData.daily[b].humidity;
 
     tempThree.innerHTML = weatherData.daily[c].temp.day.toFixed(1);
-    const imagesrc3 = `https://openweathermap.org/img/w/${weatherData.daily[c].weather[0].icon}.png`;
+    const imagesrc3 = `https://openweathermap.org/img/wn/${weatherData.daily[c].weather[0].icon}@2x.png`;
     const desc3 = weatherData.daily[c].weather[0].description;
     day3Icon.setAttribute('src', imagesrc3);
     day3Icon.setAttribute('alt', desc3);

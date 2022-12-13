@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="">
+    <title>Bountiful Foods Homepage</title>
+    <meta name="description" content="Here is the starting place for all of your produce needs. Here is where to start to get all your fresh, organic produce.">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="styles/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Klee+One:wght@600&display=swap" rel="stylesheet">
 </head>
-
+<!--  -->
 <body>
     <header>
-        <img class="logo" src="images/logo.webp" alt="Strawberry Logo">
+        <img class="logo" src="images/logosm.webp" alt="Strawberry Logo">
         <div class="headBanner">
             <h1>Bountiful Foods</h1>
             <h2>Where Food and Freshness Combine</h2>
         </div>
         <div class="social">
-            <img src="images/facebook.webp" alt="Facebook Logo">
-            <img src="images/instagram.webp" alt="Instagram Logo">
-            <img src="images/pinterest.webp" alt="Pinterest Logo">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="Facebook Logo"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.webp" alt="Instagram Logo"></a>
+            <a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterest.webp" alt="Pinterest Logo"></a>
         </div>
 
     </header>
@@ -40,16 +40,43 @@
             </ul>
         </nav>
     </div>
-    <main>
+    <main id="home">
+        <section id="hero">
+            <h2>Welcome to Your Fresh Produce Solution</h2>
+        </section>
+        <section id="product">
+            <img id="dimg2" class="pelement" src="images/cherries.webp" alt="Cup of Cherries">
+            <div id="pd1" class="pelement">
+                <h2>Freshness You Deserve</h2>
+                <p>Lorem, nemo vero exercitationem iste asperiores totam molestiae velit facilis, dicta nam, dolorem eligendi similique modi repudiandae. Laboriosam pariatur minus reiciendis harum.</p>
+            </div>
+            <img id="dimg1" class="pelement" src="images/fruitBowl.webp" alt="Bowl of Fruit">
+            <div id="pd2" class="pelement">
+                <h2>Juices to Order</h2>
+                <p>Lorem, hic magni pariatur quisquam ad eveniet praesentium veritatis, perferendis illum totam vero dolores, consequatur sapiente magnam expedita iure deserunt voluptate error tempora mollitia!</p>
+            </div>
+            
+        </section>
+        <section id="summary">
+            <img src="images/orangeCalifornia.webp" alt="Historical Fountain in Orange CA">
+            <div>
+                <h1>Orange, CA</h1>
+                <p>Orange is a city located in North Orange County, California. It is approximately 3 miles (4.8 km) north of the county seat, Santa Ana. Orange is unusual in this region because many of the homes in its Old Town District were built before 1920. While many other cities in the region demolished such houses in the 1960s, Orange decided to preserve them. The small city of Villa Park is surrounded by the city of Orange. The population was 139,911 as of 2020.[6]</p>
+            </div>
+        </section>
+        <section id="callToAction"></section>
         <section id="weather">
             <div id="currWeather">
-                <div class="today"></div>
-                <p><strong><span id="current-temp"></span> &deg;F</strong></p>
-                <figure>
-                    <img src="" alt="" id="weather-icon" />
-                    <figcaption id="weatherCap"></figcaption>
-                </figure>
-                <p>Humidity: <span id="currHum"></span></p>
+                <h2>Today's Forcast</h2>
+                <div class="cwBlock">
+                    <div class="today"></div>
+                    <p><strong><span id="current-temp"></span> &deg;F</strong></p>
+                    <figure>
+                        <img src="" alt="" id="weather-icon">
+                        <figcaption id="weatherCap"></figcaption>
+                    </figure>
+                    <p>Humidity: <span id="currHum"></span></p>
+                </div>
             </div>
             <div id="threeDayForcast">
                 <h2>Three Day Forcast</h2>
@@ -84,15 +111,17 @@
         </section>
     </main>
     <footer>
-       <img class="logo" src="images/logo.webp" alt="Strawberry Logo"> 
-       <div id="businessInfo">
-            <h1>Bountiful Foods</h1>
-            <div class="address">
-                <p>1234 Smoothie Dr.</p> 
-                <p>Carlsbad, CA 92010</p>
+        <div id="logoBlock">
+            <img class="logo" src="images/logosm.webp" alt="Strawberry Logo"> 
+            <div id="businessInfo">
+                <h1>Bountiful Foods</h1>
+                <div class="address">
+                    <p>1234 Smoothie Dr.</p> 
+                    <p>Carlsbad, CA 92010</p>
+                </div>
+                <p>📞(760)555-1234</p>
             </div>
-            <p>📞(760)555-1234</p>
-       </div>
+        </div>
        <a href="">Our📌Location</a>
        <a href="">Contact Us</a>
     </footer>

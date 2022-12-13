@@ -14,7 +14,6 @@ html {
 
 h1 {
     font-family: 'Bree Serif', serif; 
-    line-height: 0.85em;
 }
 
 h2, p {
@@ -41,13 +40,13 @@ header, footer {
 }
 
 header h1 {
-    font-size: 28pt;
+    font-size: 2.5em;
     margin: 0 0 0 0.5em;
 }
 
 header h2 {
-    font-size: 12pt;
-    margin: 0 0 0 0.5em;
+    font-size: 1em;
+    margin: 0 0 0 1.5em;
 }
 
 header .logo {
@@ -59,17 +58,24 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0.5em;
 }
 
 .social img {
-    width: 1.5em;
-    margin: 2px;
+    width: 2.5em;
+    margin: 0.25em;
+}
+
+footer {
+    justify-content: space-around;
+}
+
+#logoBlock {
+    display: flex;
 }
 
 footer .logo {
-    width: 4rem;
-    padding: 1.5em 0 1.5em 0;
-    margin-left: 0.25em;
+    display: none;
 }
 
 footer h1 {
@@ -205,41 +211,75 @@ nav ul.open {
         background: white;
     }
 
-
-/* Weather */
-
-#currWeather, #threeDayForcast, .fcBlock {
+/* ----- Hero ----- */
+#hero {    
     display: flex;
-    flex-direction: column; 
+    background-color: #dcfcd4;
+    padding: 1.5em 0;
     justify-content: center;
+}
+
+#hero h2 {
+    font-size: 45pt;
+    text-align: center;
+}
+
+/* ----- Summary / Product ----- */
+
+#summary, #product {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 1.5em 0 1.5em;
+    background-color: rgba(7, 72, 176, 0.6);
+    margin: 2.5em;
+    text-align: center;
+    color: white;
+}
+
+#product img {
+    background-color: white;
+    padding: 1em;
+}
+
+#summary p, #product p {
+    font-size: 14pt;
+    margin: 1em 1em 2em 1em;
+}
+
+#product h2 {
+    font-size: 24pt;
+    margin-top: 0.5em;
+}
+
+
+/* ----- Weather ----- */
+#weather {
+    background-color: rgba(7, 72, 176, 0.6);
+    padding: 1.5em;
+    margin: 2.5em;
+}
+
+#currWeather, .cwBlock, #threeDayForcast, .fcBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
     align-items: center;
     background-color: white;
     border: 1px solid black;
     border-radius: 0.5em;
-    margin: 1em;
     text-align: center;
-    padding: 0.5em;
+    padding: 1em;
+    max-width: 300px;
+    margin: auto;
 }
      
-.fcBlock { 
+.fcBlock, .cwBlock { 
     margin: 0.5em;
-    width: 100%;
     height: auto;
+    min-width: 200px;
+    background-color: rgb(186, 229, 245);
 }
-     
-#weather-icon {
-    width: 5em;
-}
-     
-#w-icon1, #w-icon2, #w-icon3 {
-    width: 2.5em;
-}
-     
-#currWeather figure {
-    display: flex;
-    flex-direction: column;
-}
-     
+          
 .today, .day1, .day2, .day3 {
     font-family: 'Bree Serif', serif;
     font-size: 1.5em;
