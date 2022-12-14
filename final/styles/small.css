@@ -108,6 +108,7 @@ footer a {
 }
 
 #menuArea.open {
+    position: sticky;
     background-color:rgba(137, 17, 46, 0.75);
     width: 100%;
     transition: all .5s ease-in-out;
@@ -289,15 +290,14 @@ nav ul.open {
 
     /* ----- Form ----- */
 
-    #orderForm {
+    #orderForm, #contact {
         background-color: rgba(7, 72, 176, 0.6);
         padding: 1.5em;
         margin: 5em auto;
         max-width: 500px;
-
     }
 
-     #formArea {
+     .formArea {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -312,8 +312,9 @@ nav ul.open {
         margin: 1em;
     }
 
-    form .top {
-        padding: 1em;
+    .order p {
+        text-align: center;
+        padding: 2em;
     }
 
     select {
@@ -327,7 +328,6 @@ nav ul.open {
         border: 1px solid black;
         border-radius: 4px;
         resize: vertical;
-        margin: 2px 12px 12px 12px;
     }
 
     textarea {
@@ -345,12 +345,60 @@ nav ul.open {
     label{
         display: inline-block;
         width: 250px;
-        margin: 12px 12px 2px 12px;
         font-family: 'Klee One', cursive;
         font-weight: bold;
+        margin-bottom: 0.25em;
     }
 
     legend {
         color: #89112E;
     }
 
+/* ----- About Us Page ----- */
+
+
+.contentBox {
+    background-color: white;
+}
+
+fieldset {
+    margin: 2px 12px 12px 12px;
+}
+
+.cpAddress {
+    padding: 1.5em;
+    text-align: center;    
+}
+
+.cpAddress img {
+    opacity: 0.1;
+    width: 200px;
+    align-self: center;
+}
+
+.cpAddress h2 {
+    font-size: 28pt;
+}
+
+.cpAddress p {
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+.addressBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 400px;
+}
+
+#location {
+    background-color: rgba(7, 72, 176, 0.6);
+    padding: 1.5em;
+    margin: 2.5em auto;
+}
+
+#map {
+    height: 400px; 
+    width: 100%;
+}

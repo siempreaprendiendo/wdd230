@@ -40,22 +40,59 @@
             </ul>
         </nav>
     </div>
-    <main></main>
+    <main>
+        <section id="history">
+            <div class="contentBox"></div>
+        </section>
+        <section id="contact">
+            <div class="contentBox">
+                <div class="cpAddress">
+                    <div class="logoBox">
+                        <img src="images/strawberry.webp" alt="Strawberry Logo">
+                        <div class="addressBox">
+                            <h2>Bountiful Foods</h2>
+                            <p>1234 Smoothie Dr.</p> 
+                            <p>Carlsbad, CA 92010</p>
+                            <p>📞(760)555-1234</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contctForm" method="get" action="">
+                    <div class="formarea">
+                        <fieldset>
+                            <legend>Contact Us</legend>
+                            <label class="top">First Name* <input type="text" name="title" required></label>
+                            <label class="top">Last Name* <input type="text" name="title" required></label>
+                            <label class="top">E-mail* <input type="text" name="title" required></label>
+                            <label class="top">Phone Number* <input type="text" name="title" required></label>
+                            <label class="top">Questions or Comments<textarea rows="4" cols="50" type="description" name="textarea" placeholder="Enter your text here..."></textarea></label>
+                        </fieldset>
+                        <input type="submit" value="Contact Us!" name="joinButton" class="submitBtn">
+                    </div>
+                </form>
+            </div>  
+        </section>
+        <section id="location">
+            <div id="map"></div>
+        </section>
+    </main>
     <footer>
-       <img class="logo" src="images/logo.webp" alt="Strawberry Logo"> 
-       <div id="businessInfo">
-            <h1>Bountiful Foods</h1>
-            <div class="address">
-                <p>1234 Smoothie Dr.</p> 
-                <p>Carlsbad, CA 92010</p>
+        <div id="logoBlock">
+            <img class="logo" src="images/logosm.webp" alt="Strawberry Logo"> 
+            <div id="businessInfo">
+                <h1>Bountiful Foods</h1>
+                <div class="address">
+                    <p>1234 Smoothie Dr.</p> 
+                    <p>Carlsbad, CA 92010</p>
+                </div>
+                <p>📞(760)555-1234</p>
             </div>
-            <p>📞(760)555-1234</p>
-       </div>
+        </div>
        <a href="">Our📌Location</a>
        <a href="">Contact Us</a>
-    </footer>
-    
+    </footer>    
     <script src="scripts/main.js" defer></script>
-    
+    <script src="scripts/about.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqpO8QfJTgYAXIA5VbtfsPkYFicffc8k8&callback=initMap" defer></script>
 </body>
 </html>

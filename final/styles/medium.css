@@ -90,8 +90,8 @@
         border-radius: 1%;
     }
 
-    fieldset {
-        margin: auto;
+    .addressBox {
+        top: 350px;
     }
 
     textarea {
