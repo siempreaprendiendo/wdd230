@@ -126,7 +126,6 @@ footer a {
 }
 
 #menuArea.open {
-    position: sticky;
     background-color:rgba(137, 17, 46, 0.75);
     width: 100%;
     transition: all .5s ease-in-out;

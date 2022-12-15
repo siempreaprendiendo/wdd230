@@ -21,6 +21,40 @@
     margin: 0 2em;
   }
 
+  .menuBtn {display: none;}
+
+   #primaryNav {    
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+   }
+
+   #menuArea {
+    justify-content: space-around;
+    margin-bottom: 2.5em;
+    background-color:rgba(137, 17, 46, 0.75);
+}
+
+nav ul li {
+  margin: 1em 5em;
+}
+
+nav ul li a {
+  font-size: 26px;  
+}
+
+a:hover {
+    font-size: 32px;
+}
+
+#resources a:hover {
+  color: black;
+}
+
+footer a {
+  font-size: 22px;
+}
+
   /* ----- Summary / Product ----- */
 
   #product {
