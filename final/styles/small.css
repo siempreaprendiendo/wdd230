@@ -410,11 +410,25 @@ nav ul.open {
     
     .cardContent p {
         padding: 0.5em;
+        line-height: 1.5em;
     }    
 
     .cardContent h2 {
         text-align: center;
-        margin-bottom: 1em;
+        margin-bottom: 0.25em;
+        font-size: 32px;
+    }
+
+    .cardContent h3 {
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .cardContent hr {
+        margin: 1em;
+        height: 0.15em;
+        background-color: black;
+        border-radius: 1em;
     }
 
 

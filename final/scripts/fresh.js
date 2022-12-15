@@ -122,12 +122,15 @@ form.addEventListener('submit', (e) => {
                 newList.forEach(entry => {
                     totalKcals += entry.nutritions.calories;
                 });
-        
+                
+                // ----- Get Date -----
+                const d = new Date();
+                let text = d.toDateString();
 
 
         let card = document.createElement('section');
         let firstName = document.createElement('h2');
-        // let time = document.createElement('h3');
+        let time = document.createElement('h3');
         let phoneNumber = document.createElement('p');
         let emailAddress = document.createElement('p');
         let comments = document.createElement('p');
@@ -142,6 +145,7 @@ form.addEventListener('submit', (e) => {
         let kcals = document.createElement('p');
 
         firstName.innerHTML = `Thank You ${fname.fname}!`;
+        time.innerHTML = `Order Submitted: ${text}`;
         phoneNumber.innerHTML = `Phone: ${phone.phone}`;
         emailAddress.innerHTML = `Email: ${email.email}`;
         comments.innerHTML = `Special Instructions: ${textarea.textarea}`
@@ -158,6 +162,7 @@ form.addEventListener('submit', (e) => {
         orderInfo.classList.add('submit');
 
         card.append(firstName);
+        card.append(time);
         card.append(phoneNumber);
         card.append(emailAddress);
         card.append(comments);
