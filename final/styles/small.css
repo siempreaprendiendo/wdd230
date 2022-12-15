@@ -240,6 +240,34 @@ nav ul.open {
     text-align: center;
 }
 
+/* ----- Call To Action ----- */
+
+#callToAction .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#callToAction img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+#callToAction h2 {
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+#callToAction a {
+    font-size: 2em;
+}
+#callToAction a:hover {
+    color: #125B00;
+    font-size: 3em;
+}
+
+
 /* ----- Summary / Product ----- */
 
 #summary, #product {
@@ -305,7 +333,7 @@ nav ul.open {
 
     /* ----- Form ----- */
 
-    #orderForm, #contact, #history, #resources, .submit {
+    #orderForm, #contact, #history, #resources, .submit, #callToAction {
         background-color: rgba(7, 72, 176, 0.6);
         padding: 1.5em;
         margin: 2.5em auto;

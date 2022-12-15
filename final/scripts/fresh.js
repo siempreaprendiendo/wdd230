@@ -73,7 +73,7 @@ form.addEventListener('submit', (e) => {
     async function getList() {
 
         let response = await fetch(requestURL);
-        let totalCarbs = 0;
+        
 
         if (response.ok) {
 
@@ -82,19 +82,16 @@ form.addEventListener('submit', (e) => {
             let newList = old.filter(old => {
                 return old.name === (fruit1.fruit1) || old.name === (fruit2.fruit2) || old.name === (fruit3.fruit3);});
             console.log(newList);
-            buildCard();
+            
 
             // ------ Add Carbs ------
-            
-            
+            let totalCarbs = 0;
             newList.forEach(entry => {
                 totalCarbs += entry.nutritions.carbohydrates;
             });
 
-
             // ------ Add Protein ------
             let totalProtein = 0;
-
             newList.forEach(entry => {
                 totalProtein += entry.nutritions.protein;
             });
@@ -120,8 +117,6 @@ form.addEventListener('submit', (e) => {
             newList.forEach(entry => {
                 totalKcals += entry.nutritions.calories;
             });
-
-            console.log(totalKcals);
 
 
         } else {
@@ -171,5 +166,5 @@ form.addEventListener('submit', (e) => {
 
     }
 getList();
-
+buildCard();
 });
