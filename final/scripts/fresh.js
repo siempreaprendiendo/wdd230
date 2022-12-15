@@ -69,102 +69,109 @@ form.addEventListener('submit', (e) => {
     let fname = JSON.parse(formjson);
     let phone = JSON.parse(formjson);
     let email = JSON.parse(formjson);
+    let textarea = JSON.parse(formjson);
 
     async function getList() {
 
         let response = await fetch(requestURL);
-        
+    
 
-        if (response.ok) {
+        // ----- Create New List From Entries -----
+        let old = await response.json();
+        let newList = old.filter(old => {
+            return old.name === (fruit1.fruit1) || old.name === (fruit2.fruit2) || old.name === (fruit3.fruit3);});
+        console.log(newList);
+        buildCard(newList);
 
-            // ----- Create New List From Entries -----
-            let old = await response.json();
-            let newList = old.filter(old => {
-                return old.name === (fruit1.fruit1) || old.name === (fruit2.fruit2) || old.name === (fruit3.fruit3);});
-            console.log(newList);
-            
-
-            // ------ Add Carbs ------
-            let totalCarbs = 0;
-            newList.forEach(entry => {
-                totalCarbs += entry.nutritions.carbohydrates;
-            });
-
-            // ------ Add Protein ------
-            let totalProtein = 0;
-            newList.forEach(entry => {
-                totalProtein += entry.nutritions.protein;
-            });
-
-
-            // ------ Add Sugars ------
-            let totalSugar = 0;
-
-            newList.forEach(entry => {
-                totalSugar += entry.nutritions.sugar;
-            });
-
-            // ------ Add Fats ------
-            let totalFat = 0;
-
-            newList.forEach(entry => {
-                totalFat += entry.nutritions.fat;
-            });
-
-            // ------ Add kcals ------
-            let totalKcals = 0;
-
-            newList.forEach(entry => {
-                totalKcals += entry.nutritions.calories;
-            });
-
-
-        } else {
-            throw Error(response.statusText);
-        }
     }
 
 
-    function buildCard() {
+    function buildCard(newList) {
+                // ------ Add Carbs ------
+                let totalCarbs = 0;
+                newList.forEach(entry => {
+                    totalCarbs += entry.nutritions.carbohydrates;
+                });
+
+                console.log(totalCarbs);
+        
+                // ------ Add Protein ------
+                let totalProtein = 0;
+                newList.forEach(entry => {
+                    totalProtein += entry.nutritions.protein;
+                });
+        
+        
+                // ------ Add Sugars ------
+                let totalSugar = 0;
+        
+                newList.forEach(entry => {
+                    totalSugar += entry.nutritions.sugar;
+                });
+        
+                // ------ Add Fats ------
+                let totalFat = 0;
+        
+                newList.forEach(entry => {
+                    totalFat += entry.nutritions.fat;
+                });
+        
+                // ------ Add kcals ------
+                let totalKcals = 0;
+        
+                newList.forEach(entry => {
+                    totalKcals += entry.nutritions.calories;
+                });
+        
+
+
         let card = document.createElement('section');
         let firstName = document.createElement('h2');
+        // let time = document.createElement('h3');
         let phoneNumber = document.createElement('p');
         let emailAddress = document.createElement('p');
+        let comments = document.createElement('p');
         let hr = document.createElement('hr');
         let choice1 = document.createElement('p');
         let choice2 = document.createElement('p');
         let choice3 = document.createElement('p');
-        // let carbs = document.createElement('p');
-        // let prot = document.createElement('p');
-        // let fat = document.createElement('p');
-        // let sugar = document.createElement('p');
-        // let kcals = document.createElement('p');
+        let carbs = document.createElement('p');
+        let prot = document.createElement('p');
+        let fat = document.createElement('p');
+        let sugar = document.createElement('p');
+        let kcals = document.createElement('p');
 
         firstName.innerHTML = `Thank You ${fname.fname}!`;
         phoneNumber.innerHTML = `Phone: ${phone.phone}`;
         emailAddress.innerHTML = `Email: ${email.email}`;
+        comments.innerHTML = `Special Instructions: ${textarea.textarea}`
         hr.innerHTML = ``;
         choice1.innerHTML = `Fruit 1: ${fruit1.fruit1}`;
         choice2.innerHTML = `Fruit 2: ${fruit2.fruit2}`;
         choice3.innerHTML = `Fruit 3: ${fruit3.fruit3}`;
-        // carbs.innerHTML = `Carbs: ${totalCarbs}`;
-        // prot.innerHTML = `Protein: ${totalProtein}`;
-        // fat.innerHTML = `Fat: ${totalFat}`;
-        // sugar.innerHTML = `Sugar: ${totalSugar}`;
-        // kcals.innerHTML = `Calories: ${totalKcals}`;
+        carbs.innerHTML = `Total Carbs: ${totalCarbs.toFixed(1)}`;
+        prot.innerHTML = `Total Protein: ${totalProtein.toFixed(1)}`;
+        fat.innerHTML = `Total Fat: ${totalFat.toFixed(1)}`;
+        sugar.innerHTML = `Total Sugar: ${totalSugar.toFixed(1)}`;
+        kcals.innerHTML = `Total Calories: ${totalKcals.toFixed(1)}`;
         card.setAttribute('class', `cardContent`);
         orderInfo.classList.add('submit');
 
         card.append(firstName);
         card.append(phoneNumber);
         card.append(emailAddress);
+        card.append(comments);
         card.append(hr);
         card.append(choice1);
         card.append(choice2);
         card.append(choice3);
+        card.append(carbs);
+        card.append(prot);
+        card.append(fat);
+        card.append(sugar);
+        card.append(kcals);
         orderInfo.append(card);
 
     }
 getList();
-buildCard();
 });
