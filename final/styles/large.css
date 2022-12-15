@@ -55,6 +55,11 @@ footer a {
   font-size: 22px;
 }
 
+#logoBlock {
+  flex-basis: 30%;
+  justify-content: left;
+}
+
   /* ----- Summary / Product ----- */
 
   #product {
@@ -106,6 +111,27 @@ footer a {
     #threeDayForcast {
       flex-basis: 75%;
       min-height: 315px;
+    }
+
+
+    /* ----- about page ----- */
+
+    #aboutPage {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #history {
+      min-width: 80%;
+    }
+
+    #map {
+      height: 100%;
+      width: auto;
+    }
+
+    #contact, #location {
+      flex-basis: 45%;
     }
 
 }

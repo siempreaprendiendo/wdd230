@@ -68,6 +68,12 @@
         height: auto;
         padding: 1.5em 0 1.5em 0;
         margin-left: 0.25em;
+        max-width: 100px;
+    }
+
+    #logoBlock {
+        flex-basis: 100%;
+        justify-content: center;
     }
 
 
@@ -86,6 +92,17 @@
     .addressBox {
         top: 40px;
         left: 23%;
+    }
+
+
+    /* ----- about page ----- */
+
+    .img1{
+        float: right;
+    }
+    
+    .img2{
+        float: left;
     }
 
 }

@@ -76,8 +76,6 @@ hr {
     flex-basis: 100%;
 }
 
-
-
 #logoBlock {
     display: flex;
 }
@@ -102,7 +100,7 @@ footer a {
 }
 
 #businessInfo {
-    margin: 1em;
+    margin: 1em 0 1em 1em;
 }
 
 .address {
@@ -307,7 +305,7 @@ nav ul.open {
 
     /* ----- Form ----- */
 
-    #orderForm, #contact, #history, #resources {
+    #orderForm, #contact, #history, #resources, .submit {
         background-color: rgba(7, 72, 176, 0.6);
         padding: 1.5em;
         margin: 2.5em auto;
@@ -355,7 +353,7 @@ nav ul.open {
         flex-direction: column;
     }
 
-    .submitBtn {
+    .submitBtn, .orderNow {
         display: flex;
         width: 10em;
         margin: 1.5em auto;
@@ -377,27 +375,43 @@ nav ul.open {
         color: #89112E;
     }
 
+    .content, .cardContent, .contentBox {
+        background-color: white;
+        padding: 1.5em;
+    }
+    
+    .cardContent p {
+        padding: 0.5em;
+    }    
+
+    .cardContent h2 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+
 /* ----- About Us Page ----- */
 
 #history {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #history img {
+    margin: 1em;
     border-radius: 50%;
     width: 200px;
     align-self: center;
 }
 
-.content {
-    background-color: white;
+#history h2 {
+    padding: 0.5em;
 }
 
-.contentBox {
-    background-color: white;
-    padding-bottom: 1em;
+#history p {
+    margin-bottom: 1em;
 }
 
 fieldset {
