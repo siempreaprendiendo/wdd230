@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Klee+One:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,33 +41,16 @@
         </nav>
     </div>
     <main>
-        <section id="hero">
-            <h2>Build Your Own Custom Drink</h2>
-        </section>
-        <form id="orderForm" method="get" action="">
-            <div class="formArea">
-                <fieldset class="customer">
-                    <legend>Customer Information</legend>
-                    <label id="name" class="top">First Name* <input type="text" name="fname" required></label>
-                    <label id="phone" class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                    <label id="email" class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                </fieldset>
-                <fieldset class="order">
-                    <legend>Order Form</legend>
-                    <p>Choose three different fruits to complete your order.</p>
-                    <label for="fruit">First Choice:</label>
-                        <select id="f1" class="fruits" name="fruit1"></select>
-                    <label for="fruit">Second Choice:</label>
-                        <select id="f2" class="fruits2" name="fruit2"></select>
-                    <label for="fruit">Third Choice:</label>
-                        <select id="f3" class="fruits3" name="fruit3"></select>
-                    <label class="textBox">Special Instructions<textarea rows="4" cols="50" name="textarea" placeholder="Enter your text here..."></textarea></label>
-                </fieldset>
-                <button type="submit" name="orderNow" class="orderNow">Order Now</button>
-                <input type="hidden" id="dateVisited" name="submissionTime">
+        <section id="resources">
+            <div class="content">
+                <h2>Resources</h2>
+                <ul>
+                    <a href="https://en.wikipedia.org/wiki/Orange,_California" target="_blank"><li>Orange California </li></a>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
-        </form> 
-        <div class="submissionCard"></div>
+        </section>
     </main>
     <footer>
         <div id="logoBlock">
@@ -81,18 +64,15 @@
                 <p>📞(760)555-1234</p>
             </div>
         </div>
-        <a href="">Our📌Location</a>
-        <a href="">Contact Us</a>
-        <a href="resource.html">Resources</a>
         <hr>
-        <div class="footerEnd">
+       <a href="">Our📌Location</a>
+       <a href="">Contact Us</a>
+       <a href="resource.html">Resources</a>       
+       <div class="footerEnd">
             <p class="copyright">&copy; <span id="year"></span> 🗻 Rebecca L. Jimenez 🗻 Washington</p>
             <div id="dateMod"></div>
         </div>
-    </footer>
-    
+    </footer>    
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/fresh.js" defer></script>
-    
 </body>
 </html>

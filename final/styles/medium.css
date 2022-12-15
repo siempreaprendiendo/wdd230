@@ -70,16 +70,9 @@
         margin-left: 0.25em;
     }
 
-    #logoBlock {
-        justify-content: center;
-    }
-
 
     /* ----- Form ----- */
 
-    input, textarea {
-        width: 125%;
-    }
 
     #formArea {
         display: flex;
@@ -91,12 +84,8 @@
     }
 
     .addressBox {
-        top: 350px;
+        top: 40px;
+        left: 23%;
     }
-
-    textarea {
-        width: 140%;
-        align-self: center;
-      }
 
 }

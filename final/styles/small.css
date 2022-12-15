@@ -67,8 +67,16 @@ header .logo {
 }
 
 footer {
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+hr {
+    flex-basis: 100%;
+}
+
+
 
 #logoBlock {
     display: flex;
@@ -101,6 +109,16 @@ footer a {
     margin: 0.5em 0 0.5em 0;
 }
 
+.footerEnd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+#dateMod {
+    padding: 0.5em;
+}
 /* ------ Nav ------ */
 
 #menuArea {
@@ -290,11 +308,11 @@ nav ul.open {
 
     /* ----- Form ----- */
 
-    #orderForm, #contact {
+    #orderForm, #contact, #history, #resources {
         background-color: rgba(7, 72, 176, 0.6);
         padding: 1.5em;
-        margin: 5em auto;
-        max-width: 500px;
+        margin: 2.5em auto;
+        max-width: 600px;
     }
 
      .formArea {
@@ -323,31 +341,37 @@ nav ul.open {
         font-family: 'Libre Baskerville', serif;
     }
 
+    select, textarea {
+        width: 100%;
+    }
+
     input, textarea {
         padding: 12px;
         border: 1px solid black;
         border-radius: 4px;
-        resize: vertical;
     }
 
-    textarea {
-        width: 95%;
+    fieldset {
+        display: flex;
+        flex-direction: column;
     }
 
     .submitBtn {
+        display: flex;
         width: 10em;
-        margin: 2em;
-        align-self: center;
+        margin: 1.5em auto;
         font-family: 'Klee One', cursive;
         font-size: x-large;
+        background-color: #89112E;
+        color: white;
+        justify-content: center;
     }
 
     label{
-        display: inline-block;
-        width: 250px;
-        font-family: 'Klee One', cursive;
+        display: flex;
+        flex-direction: column;
         font-weight: bold;
-        margin-bottom: 0.25em;
+        margin: 0.5em;
     }
 
     legend {
@@ -356,9 +380,25 @@ nav ul.open {
 
 /* ----- About Us Page ----- */
 
+#history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#history img {
+    border-radius: 50%;
+    width: 200px;
+    align-self: center;
+}
+
+.content {
+    background-color: white;
+}
 
 .contentBox {
     background-color: white;
+    padding-bottom: 1em;
 }
 
 fieldset {
@@ -385,11 +425,14 @@ fieldset {
     font-weight: bolder;
 }
 
+.logoBox {
+    position: relative;
+}
+
 .addressBox {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 400px;
+    top: 4%;
+    left: 3%;
 }
 
 #location {
@@ -401,4 +444,15 @@ fieldset {
 #map {
     height: 400px; 
     width: 100%;
+}
+
+
+/* ----- resources page ----- */
+
+#resources .content {
+    padding: 2.5em 5em 5em 5em;
+    min-height: 400px;
+}
+#resources ul{
+    padding: 1em 2em;    
 }
