@@ -56,9 +56,11 @@ header .logo {
 
 .social {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0.5em;
+    width: 20em;
+    justify-content: center;
 }
 
 .social img {
