@@ -119,6 +119,14 @@ footer a {
 #dateMod {
     padding: 0.5em;
 }
+
+.owmIcon {
+    border-radius: 10%;
+    margin-top: 1.5em;
+    max-width: 85px;
+  }
+
+
 /* ------ Nav ------ */
 
 #menuArea {
