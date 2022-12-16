@@ -287,6 +287,7 @@ nav ul.open {
     background-color: rgba(7, 72, 176, 0.6);
     margin: 2.5em;
     text-align: center;
+    justify-content: center;
     color: white;
 }
 
